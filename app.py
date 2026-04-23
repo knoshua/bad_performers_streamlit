@@ -69,6 +69,10 @@ def get_fig_and_confusion(df, metric_choice, metric_threshold, effectiveness_tar
         x=df.index,
         y="Effectiveness",
         color="status",
+        color_discrete_map={
+            "Force Exit": "red",
+            "No Exit": "blue"
+            },
         hover_data=["Validator ID", "Effectiveness", metric_choice],
     )
         
