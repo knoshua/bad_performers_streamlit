@@ -17,8 +17,8 @@ def main():
             metric_choice = st.radio(
                 "Metric",
                 [
-                    "Head Timeliness",
                     "Target Timeliness",
+                    "Head Timeliness",
                     "Source Timeliness",
                     "Weighted Timeliness",
                 ],
